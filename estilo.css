@@ -1,0 +1,301 @@
+/* ==================== BODY ==================== */
+body{
+	margin: 0;
+	width: 1800px;
+    background-color: rgb(230, 230, 230);
+}
+/* ==================== MAIN ==================== */
+main{
+	width: 1800px;
+}
+/* ==================== HEADER ==================== */
+header {
+    background-color: #31384b;
+    height: 80px;
+    width: 1800px; 
+	border-radius: 5px;
+    border: 1px solid #31384b;
+}
+
+header img {
+    width: 100px;
+    height: 80px;
+    border-radius: 5px;
+}
+/* TOTAL HEADER: Ancho = 1800px, Alto = 80px */
+
+/* ==================== MENU ==================== */
+nav {
+    display: inline-block;
+    width: 1650px;
+    height: 80px;
+    font-size: large;
+    font-family: Arial, sans-serif;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: 10px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+	color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+}
+nav a:hover {
+    background-color: rgb(230, 230, 230);
+	color: rgb(52, 52, 52);
+    border-radius: 5px;
+}
+/* TOTAL NAV: Ancho = 1650px, Alto = 80px + 10px padding = 90px */
+/* ==================== PORTADA ==================== */
+#portada{
+	width: 1800px;
+}
+#portada h2{
+	text-align: center;
+}
+#titulo{
+	font-size: 60px;
+	text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#cajaContenedor{
+	margin: auto;
+	text-align: center;
+	width: 1400px;
+    height: 600px;
+    position: relative; /* Crea contexto de posicionamiento para elementos hijos absolutos */
+    overflow: hidden; /* Oculta contenido que excede los límites del contenedor */
+    cursor: pointer;
+}
+#cajaContenedor img{
+	border-radius: 10px;
+    width: 1400px;
+    height: 600px;
+    border: 1px solid #b8b8b8;
+    transition: all .5s; /* Anima todas las propiedades durante 0.5 segundos */
+}
+#cajaContenedor:hover img{
+    transform: scale(1.4); /* Agranda la imagen a 1.4 veces su tamaño original */
+}
+/* TOTAL PORTADA: Ancho = 1800px, CajaContenedor = 1400px x 600px */
+/* ==================== CONTENIDO 1 ==================== */
+#contenido1{
+    background-color: #31384b;
+    height: 600px;
+    width: 670px;
+    position: absolute; /* Se posiciona respecto al ancestro con position relative */
+    top: -600px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+#contenido1 h3{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 10px;
+}
+#contenido1 p{
+    padding: 150px 20px 15px 20px;
+    margin-top: 100px;
+    height: 250px;
+    width: 570px;
+    text-align: justify;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#cajaContenedor:hover #contenido1{
+    top: 0;
+    left: 0;
+    transition: all .5s; /* Anima el desplazamiento suavemente */
+    opacity: 80%; /* Establece transparencia al 80% */
+    border-radius: 15px;
+}
+/* TOTAL CONTENIDO1: Ancho = 670px, Alto = 600px, Párrafo interno = 570px + 40px padding = 610px x (250px + 185px padding = 435px) */
+/* ==================== CONTENIDO 2 ==================== */
+#contenido2{
+    background-color: #31384b;
+    height: 600px;
+    width: 670px;
+    position: absolute; /* Se posiciona respecto al contenedor padre */
+    top: -600px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+#contenido2 h3{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 10px;
+}
+#contenido2 p{
+    padding: 150px 20px 15px 20px;
+    border-bottom: 1px solid white;
+    height: 250px;
+    width: 570px;
+    text-align: justify;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#cajaContenedor:hover #contenido2{
+    top: 0;
+    right: 0;
+    transition: all .5s; /* Anima el movimiento al hacer hover */
+    opacity: 80%; /* Define el nivel de transparencia */
+    border-radius: 15px;
+}
+/* TOTAL CONTENIDO2: Ancho = 670px, Alto = 600px, Párrafo interno = 570px + 40px padding = 610px x (250px + 185px padding = 435px) */
+/* ==================== NOTICIAS ==================== */
+.bloques {
+    width: 1600px;
+    margin: 20px auto 30px auto;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .5s; /* Anima cambios de propiedades suavemente */
+    overflow: hidden; /* Esconde contenido que sobresalga del contenedor */
+    box-shadow: 10px 10px 10px 10px #31384b; /* Crea sombra proyectada alrededor del elemento */
+}
+.bloques:hover {
+    transform: scale(1.06); /* Incrementa el tamaño del bloque al pasar el ratón */
+}
+#imgArticulo1,
+#imgArticulo2 {
+    float: left; /* Posiciona el elemento a la izquierda permitiendo que el texto fluya a su derecha */
+    width: 600px;
+    padding: 20px;
+}
+#imgArticulo1 img,
+#imgArticulo2 img {
+    width: 550px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 5px #31384b; /* Añade sombra a las imágenes */
+}
+#contenidoNoticia1,
+#contenidoNoticia2 {
+    float: right; /* Posiciona el elemento a la derecha */
+    width: 800px;
+    padding: 20px;
+}
+#contenidoNoticia1 p,
+#contenidoNoticia2 p {
+    font-size: 16px;
+    color: #333;
+}
+#contenidoNoticia1 h2 {
+    color: #000000;
+    text-align: center;
+    margin-right: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px; /* Añade espacio entre las letras del texto */
+}
+#contenidoNoticia1 table {
+    width: 700px;
+    border-collapse: collapse;
+    background-color: rgb(250, 235, 217);
+    font-family: 'Roboto', sans-serif;
+}
+#contenidoNoticia1 th {
+    background-color: #31384b;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+#contenidoNoticia1 td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+#contenidoNoticia1 tr:hover {
+    background-color: #d7e6fa;
+}
+#contenidoNoticia2_1{
+    width: 800px;
+}
+#contenidoNoticia2_1 h2{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px; /* Separa las letras del título */
+}
+#contenidoNoticia2_1 p{
+    width: 350px;
+    text-align: justify;
+    float: left; /* Alinea el párrafo a la izquierda */
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+}
+#contenidoNoticia2_1 img{
+    width: 350px;
+    float: right; /* Posiciona la imagen a la derecha */
+    border-radius: 10px;
+    margin: -45px 30px 0px 0px;
+    box-shadow: 5px 5px 5px 5px #31384b; /* Genera sombra en la imagen */
+}
+/* TOTAL NOTICIAS: Bloques = 1600px, imgArticulo = 600px + 40px padding = 640px, contenidoNoticia = 800px + 40px padding = 840px, Tabla = 700px */
+/* ==================== FORMULARIO ==================== */
+form {
+    width: 400px;
+    background-color: rgb(255, 250, 243);
+    margin: 0 auto;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 10px;
+    box-shadow: 15px 5px 10px #1d2935; /* Crea efecto de profundidad con sombra */
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#tituloFormulario{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#subtituloFormulario{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.secciones {
+    margin-bottom: 12px;
+}
+.secciones label {
+    display: block; /* Convierte el label en bloque para que ocupe toda la línea*/
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 15px;
+}
+.secciones input{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #1d2935; /* Añade sombra a los campos de entrada */
+}
+.secciones input[type = "submit"],
+.secciones input[type = "reset"]{
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #31384b; 
+    color: white;
+}
+.secciones input[type = "submit"]:hover,
+.secciones input[type = "reset"]:hover{
+    background-color: rgb(255, 230, 197);
+    color: #2c3e50;
+}
+/* TOTAL FORMULARIO: Ancho = 400px + 40px padding + 2px border = 442px */
+/* ==================== FOOTER ==================== */
+footer{
+    height: 70px;
+    width: 1800px;
+    background-color: #31384b;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: fixed; /* Fija el footer en la parte inferior de la ventana */
+    bottom: 0;
+    border-radius: 4px;
+    padding-bottom: 5px;
+}
+/* TOTAL FOOTER: Ancho = 1800px, Alto = 70px + 5px padding = 75px */
